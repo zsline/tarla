@@ -1,0 +1,28 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  padding: 16px 0;
+  border-bottom: 1px solid #000;
+  &__menu ul {
+    display: flex;
+    li {
+      margin-right: 16px;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__registr {
+    float: right;
+    margin-right: 0;
+    margin-left: auto;
+    a{
+      margin-left: 16px;
+    }
+  }
+}
