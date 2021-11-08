@@ -40,9 +40,23 @@ h2 {
   line-height: 60px;
   text-align: center;
 }
+h3 {
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: 400;
+}
 h4 {
   font-size: 40px;
   line-height: 56px;
+}
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+h6{
+  font-size: 22px;
 }
 section {
   padding: 72px 0;
@@ -54,8 +68,10 @@ section {
   border-radius: 35px;
   transition: all 0.3s;
   max-width: 310px;
+  display: inline;
+  text-align: center;
   &:hover {
-    background-color: #fff;
+    background-color: rgba(250,250,250,0.6);
   }
 }
 .slick-prev,
@@ -70,4 +86,10 @@ section {
 .btn-blue {
   border: 1px solid $blue;
   color: $blue;
+}
+.rev{
+  flex-direction: row-reverse;
+  .blog__info{
+    margin: 0 50px 0 0;
+  }
 }
