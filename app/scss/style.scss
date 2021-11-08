@@ -21,8 +21,44 @@
     float: right;
     margin-right: 0;
     margin-left: auto;
-    a{
+    a {
       margin-left: 16px;
+    }
+  }
+}
+.home {
+  background-color: $yellow;
+  &__offer {
+    max-width: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 612px;
+  }
+  &__slider {
+    &-item {
+      position: relative;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        max-width: 898px;
+        height: 564px;
+        border-radius: 20px;
+      }
+    }
+    button {
+      position: absolute;
+      right: 15px;
+      bottom: 50px;
+      cursor: pointer;
+    }
+    .slick-prev {
+      right: 75px !important;
+      z-index: 999;
+    }
+    .slick-next {
+      transform: rotate(180deg);
     }
   }
 }

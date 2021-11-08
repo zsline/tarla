@@ -1,31 +1,55 @@
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
   background-color: $bg;
 }
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
-.container{
+.container {
   max-width: 1438px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
-
-
-
+a{
+  font-size: 22px;
+line-height: 34px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 90px;
+}
+.btn{
+  padding: 12px 73px;
+  border: 1px solid #000;
+  border-radius: 35px;
+  transition: all .3s;
+  max-width: 310px;
+  &:hover{
+    background-color: #fff;
+  }
+}
+.slick-prev, .slick-next{
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/arrow.png);
+  min-width: 54px;
+  min-height: 37px;  
+}
