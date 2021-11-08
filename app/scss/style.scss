@@ -47,6 +47,9 @@
         border-radius: 20px;
       }
     }
+    p {
+      margin-right: 20px;
+    }
     button {
       position: absolute;
       right: 15px;
@@ -101,29 +104,30 @@
   }
 }
 .shop {
-  table {
-    width: 100%;
-    margin-top: 25px;
+  &__inner {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
   }
-  td {
-    padding-top: 25px;
-    text-align: left;
-    vertical-align: middle;
-    span {
-      display: block;
-      font-size: 27px;
-      line-height: 36px;
-      text-transform: uppercase;
-    }
-    img {
-      margin-bottom: 12px;
-      border-radius: 20px;
-    }
-    p {
-      margin-bottom: 25px;
-    }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    display: block;
+    font-size: 27px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  img {
+    margin-bottom: 12px;
+    border-radius: 20px;
+  }
+  p {
+    margin-bottom: 25px;
   }
 }
+
 .rectangle {
   padding-bottom: 0;
   img {
@@ -131,25 +135,20 @@
   }
 }
 .process {
+
   padding-top: 10px;
   padding-bottom: 0;
-  table {
-    border-spacing: 16px;
-    text-align: center;
-    width: 100%;
-    img {
-      margin: 0 auto;
-      border-radius: 10px;
-    }
+  &__inner{
+      display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
   }
-  td {
-    max-height: 630px;
-    width: 33%;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 25px;
+  img {
+    margin: 0 auto;
+    border-radius: 10px;
   }
 }
+
 .blog {
   overflow: hidden;
   position: relative;
@@ -218,8 +217,10 @@
     line-height: 24px;
     text-transform: uppercase;
     margin-top: 24px;
-    li{
+    li {
       margin-bottom: 4px;
     }
   }
 }
+
+@import "media";

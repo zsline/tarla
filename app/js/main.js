@@ -22,7 +22,7 @@ $('.home__slider').slick({
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '100px',
+          centerPadding: '40px',
           slidesToShow: 1
         }
       }
