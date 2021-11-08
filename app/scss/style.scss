@@ -62,3 +62,69 @@
     }
   }
 }
+.works {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  &__item {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 273px;
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+.benefits {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  img {
+    border-radius: 20px;
+  }
+  &__offer {
+    padding-left: 50px;
+    height: 100%;
+    h4 {
+      margin-bottom: 50px;
+    }
+  }
+}
+.shop {
+  table {
+    width: 100%;
+    margin-top: 25px;
+  }
+  td {padding-top: 25px;
+    text-align: left;
+    vertical-align: middle;
+    span {
+      display: block;
+      font-size: 27px;
+      line-height: 36px;
+      text-transform: uppercase;
+    }
+    img{
+      margin-bottom: 12px;
+      border-radius: 20px;
+    }
+    p{
+      margin-bottom: 25px;
+    }
+  }
+}
+.rectangle{
+  img{
+    width: 100%;
+  }
+}
